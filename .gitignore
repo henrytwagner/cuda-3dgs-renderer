@@ -1,0 +1,55 @@
+# Build artifacts
+/build/
+/build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+/.cache/
+
+# IDE clutter (adjust for your editor)
+.vscode/
+.idea/
+.DS_Store
+*.suo
+*.user
+*.ncb
+*.sln
+*.vcxproj*
+
+# Logs and temporary files
+*.log
+
+# Large data files (PLY files are too large for git)
+data/splats/*.ply
+data/splats/*.PLY
+
+# External libraries (should use git submodules or download separately)
+external/glfw/
+external/glm/
+external/tinyply/  # Keep tinyply since it's a single header file we modified
+
+# But keep the structure
+!external/tinyply/tinyply.h
+!external/tinyply/tinyply.cpp
+
+# Tools (downloaded locally, not tracked)
+/tools/
+cmake.zip
+
+# Windows specific
+*.exe
+*.dll
+*.lib
+*.exp
+*.pdb
+*.ilk
+*.obj
+
+# User-specific configuration
+config.ps1
+
+# Old benchmark results (if any)
+benchmark_results.csv

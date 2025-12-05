@@ -1,0 +1,25 @@
+# Configuration file for build environment
+# Copy this file to config.ps1 and update the paths for your system
+
+# CUDA Toolkit path
+# Find this by checking where nvcc.exe is installed
+# Common locations:
+#   - C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1
+#   - C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8
+$CUDA_PATH = "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1"
+
+# Visual Studio MSVC compiler path
+# Find this by checking where cl.exe is installed
+# Common locations:
+#   - C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\<version>\bin\Hostx64\x64
+#   - C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\<version>\bin\Hostx64\x64
+#   - C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\<version>\bin\Hostx64\x64
+$MSVC_PATH = "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\bin\Hostx64\x64"
+
+# CMake path (if using bundled CMake in tools/)
+# Leave empty if CMake is in your system PATH
+$CMAKE_PATH = "$PSScriptRoot\tools\cmake-3.28.3-windows-x86_64\bin"
+
+# Alternative: If CMake is in system PATH, set to empty string
+# $CMAKE_PATH = ""
+
