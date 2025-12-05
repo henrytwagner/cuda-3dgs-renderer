@@ -5,7 +5,7 @@ CUDA-accelerated real-time renderer for 3D Gaussian Splatting scenes. Implements
 ## Quick Links
 
 - [Setup Instructions](SETUP.md) - Configure your development environment
-- [Paper](paper_final.tex) - Detailed optimization analysis
+- [Paper](wagner_3dgs_optimization.pdf) - Detailed optimization analysis
 
 ## Requirements
 
@@ -146,4 +146,4 @@ src/
 
 ## Performance
 
-Optimized implementation achieves 125 FPS at 2M Gaussians (720×720 resolution) on RTX 4090. See `paper_final.tex` for detailed performance analysis and optimization techniques.
+Optimized implementation achieves 125 FPS at 2M Gaussians (720×720 resolution) on RTX 4090. See [wagner_3dgs_optimization.pdf](wagner_3dgs_optimization.pdf) for detailed performance analysis and optimization techniques.
